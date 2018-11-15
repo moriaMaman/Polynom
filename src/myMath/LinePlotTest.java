@@ -12,7 +12,14 @@ import myMath.Polynom;
 import myMath.Polynom_able;
 
 public class LinePlotTest extends JFrame {
-//
+	/**
+	 * this class draw the 0.2x^4-1.5x^3+3.0x^2-x-5 polynom its also can draw any other polynom as well
+	 * we also show in the draw the critical points of the function and we print the area of the function between 
+	 * the polynom and under the x axis
+	 * this function is a build one, took from the online library GRAL https://github.com/eseifert/gral
+	 * and we put some changes so it can match our project.
+	 * 
+	 */
     public LinePlotTest() {
     	
         setDefaultCloseOperation(EXIT_ON_CLOSE);

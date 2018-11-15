@@ -264,7 +264,11 @@ public class Polynom implements Polynom_able{
 		}
 		return newPoly;
 	}
+	
 
+	/**
+	 * this function return the area of the polynom and above the x axis between two points.
+	 */
 	@Override
 	public double area(double x0, double x1, double eps) {
 		double count=f(x0)*eps;
@@ -281,6 +285,9 @@ public class Polynom implements Polynom_able{
 		return count;
 	}
 	
+	/**
+	 * this function return the area of the polynom under the x axis between two points.
+	 */
 	public double areaUnder(double x0, double x1) {
 		double count=f(x0)*0.01;
 		x0 = x0+0.01;
@@ -296,6 +303,9 @@ public class Polynom implements Polynom_able{
 		return count;
 	}
 	
+	/**
+	 * this function return the area of the polynom between two points.
+	 */
 	public double areaAll(double x0, double x1) {
 		double count=f(x0)*0.01;
 		x0 = x0+0.01;

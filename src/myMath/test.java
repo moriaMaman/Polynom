@@ -7,9 +7,6 @@ public class test {
 
 	public static void main(String[] args) {
 		
-		  Polynom p2 = new Polynom("0.2x^4-1.5x^3+3.0x^2-x-5");
-	        Polynom_able divPoly=p2.derivative();
-	        System.out.println(divPoly.root(0.0, 0.25, 0.000000000000001));
 		System.out.println("######test1 of Monom######");
 		test1();
 		System.out.println("\n\n######test2######\n");
@@ -109,8 +106,6 @@ public class test {
 		Polynom_able p2 = new Polynom("5.3x^8+8.1x^2-3x+0.9");
 		
 		//add
-		System.out.println("p1:"+p1);
-		System.out.println("p2:"+p2);
 		p1.add(p2);
 		System.out.println("get \"5.3x^8+3.2x^4+13.1x^2-5x+7.9\":");
 		System.out.println(p1);
@@ -147,8 +142,6 @@ public class test {
 		System.out.println(p2.derivative());
 		
 		//f(x)
-		System.out.println(p1);
-		System.out.println(p2);
 		System.out.println("get 35143.3:" + p1.f(3));
 		System.out.println("get 34838.1:" + p2.f(3));
 		
